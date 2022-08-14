@@ -1,19 +1,17 @@
 package org.gyan;
 
 
-import org.junit.Test;
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class JavaHelloWorldTest {
 
 
-    public void testGetHello() {
-        JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
-        assert("Hello World".equals(javaHelloWorld.getHello()));
-    }
+
 
     @Test
-    public void getHello() {
+    void testGetHello1() {
         JavaHelloWorld javaHelloWorld = new JavaHelloWorld();
-       assertEquals("Hello World",javaHelloWorld.getHello());
+        assertEquals("Hello World",javaHelloWorld.getHello());
     }
 }
